@@ -1,8 +1,6 @@
 package com.hotel;
 
 public class Room {
-    public Room() {
-    }
 
 
     private int numberOfBeds;
@@ -31,7 +29,7 @@ public class Room {
     }
 
     public boolean isAvailable() {
-        return dirty;
+        return !dirty && !occupied;
     }
 }
 
